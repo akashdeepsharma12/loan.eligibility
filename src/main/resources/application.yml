@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: loan.eligibility
+
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot-demo/onboard/api/loanproject
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: env,health
+  cors:
+    allowed-methods: GET,POST
